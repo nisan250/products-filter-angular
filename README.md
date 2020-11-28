@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 # Live
 
+=======
+# Live 
+>>>>>>> 1b3107b1eaa0e25004daa82139a7e11e7a27ca16
 https://nisan250.github.io/products-filter-angular/.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
@@ -28,6 +32,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 1b3107b1eaa0e25004daa82139a7e11e7a27ca16
 https://www.c-sharpcorner.com/article/custom-pagination-component-in-angular-6/
 https://stackblitz.com/edit/ng-pagination-wt?file=src%2Fapp%2Fapp.component.html
 https://medium.com/javascript-everyday/angular-paginator-implemented-from-scratch-ccd2dc7e8b4e
