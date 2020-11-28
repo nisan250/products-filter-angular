@@ -29,19 +29,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 
-
-
-
-is there a better way to reset the selected product after adding/updating/deleting? maybe do it in service?
-in product detail component I makes a copy from what I get from observable, because I dont want when I type to make changes, is there a batter way?
-in productList, I adding the products from service to variable products and to variable searchedProduct
-why after submitting I get errors? how to start fresh
-when filtering I cant delete since I make a new copy of of the array in handleSearch method
-how to implement pagination...
-
-add image
-add pagination
-
 https://www.c-sharpcorner.com/article/custom-pagination-component-in-angular-6/
 https://stackblitz.com/edit/ng-pagination-wt?file=src%2Fapp%2Fapp.component.html
 https://medium.com/javascript-everyday/angular-paginator-implemented-from-scratch-ccd2dc7e8b4e
