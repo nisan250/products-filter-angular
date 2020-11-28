@@ -1,0 +1,8 @@
+<button (click)="sort.emit(field)"
+        [ngClass]="{ selected: sortField === field}">
+  {{ field }}
+  <ng-container *ngIf="sortField === field">
+    <span *ngIf="orderType ==='asc'" class="fa fa-caret-down">↓</span>
+    <span *ngIf="orderType ==='desc'" class="fa fa-caret-up">↑</span>
+  </ng-container>
+</button>

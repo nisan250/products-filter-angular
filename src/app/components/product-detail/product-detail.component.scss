@@ -1,0 +1,32 @@
+:host {
+  margin-left: 10px;
+  border: 1px solid #000;
+}
+
+.product-detail-wrapper {
+  // width: 60vw;
+  //   padding: 0 20px;
+  display: flex;
+
+  form {
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    min-width: 282px;
+    margin-bottom: 10px;
+  }
+
+  .field-error {
+    border-color: red;
+  }
+
+  .alert-danger {
+    color: red;
+    direction: rtl;
+    margin-bottom: 10px;
+  }
+}

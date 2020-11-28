@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "s product 1",
+    "description": "some description...",
+    "price": 24,
+    "date": "2021-09-25T21:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "name": "d product 2",
+    "description": "some description...",
+    "price": 64,
+    "date": "2020-07-21T21:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "name": " f product 3",
+    "description": "some description...",
+    "price": 32,
+    "date": "2020-06-22T21:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "name": "a product 4",
+    "description": "some description...",
+    "price": 56,
+    "date": "2020-10-25T22:00:00.000Z"
+  }
+]

@@ -1,0 +1,28 @@
+<div class="product-list-wrapper">
+  <div class="product-list-top-bar">
+    <app-product-filter></app-product-filter>
+    <button (click)="onNewProductClick()" class="add-button">Add New Product</button>
+  </div>
+
+  <div class="product-list-content">
+    <div (click)="onProductSelect(product)"
+         *ngFor="let product of products"
+         [ngClass]="{ active: product?.id === selectedProductId }"
+         class="product-list-item">
+
+      <div class="list-item-left-area">
+        <div>name: {{ product.name }}</div>
+        <div>description: {{ product.description }}</div>
+        <hr/>
+        <div>date: {{ product.date | date }}</div>
+        <div>price: {{ product.price }}</div>
+      </div>
+
+      <div class="list-item-right-area">
+        <button (click)="onDeleteProductClick(product)" class="delete-button">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

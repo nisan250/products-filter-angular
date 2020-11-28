@@ -1,0 +1,13 @@
+<ng-container *ngFor="let field of ['price', 'date']">
+  <app-product-sort-button (sort)="onSortButtonClick(field)"
+                           [field]="field"
+                           [orderType]="filter?.orderType"
+                           [sortField]="filter?.sortField"></app-product-sort-button>
+</ng-container>
+
+<label>
+  <input (ngModelChange)="onFilterTextChange($event)"
+         [ngModel]="filter?.globalTextFilter"
+         placeholder="Search product..."
+         type="text"/>
+</label>

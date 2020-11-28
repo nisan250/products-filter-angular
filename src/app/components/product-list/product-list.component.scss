@@ -1,0 +1,38 @@
+:host {
+  flex: 1;
+}
+
+.product-list-wrapper {
+  .product-list-top-bar {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #000;
+    padding: 10px;
+  }
+
+  .product-list-item {
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+
+    &.active {
+      background-color: #ccc;
+    }
+
+    .list-item-left-area {
+    }
+
+    .list-item-right-area {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .delete-button {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+<div class="product-detail-wrapper">
+  <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+    <h2 *ngIf="!selectedProduct.id">Add New Product</h2>
+    <h2 *ngIf="selectedProduct.id">Product {{ selectedProduct.id }} Detail</h2>
+
+    <div class="form-group">
+      <label>
+        Name
+        <input
+          #nameField="ngModel"
+          [(ngModel)]="selectedProduct.name"
+          [class.field-error]="nameField.touched && nameField.invalid"
+          id="name"
+          minlength="4"
+          name="name"
+          placeholder="Name"
+          required/>
+      </label>
+    </div>
+    <div *ngIf="nameField.touched && nameField.invalid" class="alert-danger">
+      4 characters minimum
+    </div>
+
+    <div class="form-group">
+      <label>
+        Description
+        <textarea
+          #descriptionField="ngModel"
+          [(ngModel)]="selectedProduct.description"
+          [class.field-error]="descriptionField.touched && descriptionField.invalid"
+          id="description"
+          maxlength="25"
+          name="description"
+          required
+          rows="3"></textarea>
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label>
+        Price
+        <input
+          #priceField="ngModel"
+          [(ngModel)]="selectedProduct.price"
+          [class.field-error]="priceField.touched && priceField.invalid"
+          id="price"
+          name="price"
+          placeholder="price"
+          required
+          type="number"/>
+      </label>
+    </div>
+
+    <button [disabled]="!form.valid" class="btn btn-primary" type="submit">
+      <span *ngIf="!selectedProduct.id">Add New Product</span>
+      <span *ngIf="selectedProduct.id">Update Product {{ selectedProduct.id }}</span>
+    </button>
+  </form>
+</div>
